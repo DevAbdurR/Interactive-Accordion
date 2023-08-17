@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Kumbh Sans", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.app {
+  height: 100vh;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  padding: 40px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  background-color: white;
+  border-radius: 25px;
+
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*///////////////////////////////
+      Left Panel Styling 
+ /////////////////////////////*/
+
+.left-panel-container {
+  background-image: url(/src/assets/images/bg-pattern-desktop.svg);
+  padding-right: 40px;
+
+  max-width: max-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+ width: 100%;
+}
+
+/*/ ////////////////////////////
+Right Panel Styling 
+ /////////////////////////////*/
+
+ 
+.right-panel-container {
+  padding: 80px 40px;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.faq-container {
+  max-width: 400px;
+  padding: 20px 0;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.faq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question,
+.arrow {
+  cursor: pointer;
+}
+
+.answer {
+  /* display: none; */
+  height: 0;
+  overflow: hidden;
+
+  padding-top: 10px;
+  color: hsl(240, 6%, 50%);
+  font-size: 14px;
+
+  transition: all 400ms ease;
 }
