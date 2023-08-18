@@ -2,7 +2,8 @@
 
 This is a solution to the Interactive FAQ Accordion challenge from Frontend Mentor, built using React. It's a project designed to showcase an interactive FAQ section where users can click on questions to reveal their answers.
 
-![Project Preview](screenshot.png)
+![image](https://github.com/DevAbdurR/Interactive-Accordion/assets/112758727/58797b96-c56a-4dd8-9311-35dcf5a1139a)
+
 
 ## Features
 
